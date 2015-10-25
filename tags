@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BPB_BytePerSec	Boot/Boot.asm	/^	BPB_BytePerSec	dw		512				;每扇区字节数$/;"	d
+BPB_FATsz16	Boot/Boot.asm	/^	BPB_FATsz16		dw		9				;每FAT扇区数$/;"	d
+BPB_HideSec	Boot/Boot.asm	/^	BPB_HideSec		dd		0				;隐藏扇区数$/;"	d
+BPB_Media	Boot/Boot.asm	/^	BPB_Media		db		0xf0			;媒体描述符$/;"	d
+BPB_NumFATs	Boot/Boot.asm	/^	BPB_NumFATs		db		2				;FAT表数$/;"	d
+BPB_NumHeads	Boot/Boot.asm	/^	BPB_NumHeads	dw		2				;磁头数$/;"	d
+BPB_RootEntCnt	Boot/Boot.asm	/^	BPB_RootEntCnt	dw		224				;根目录文件数最大值$/;"	d
+BPB_RsvdSecCnt	Boot/Boot.asm	/^	BPB_RsvdSecCnt	dw		1				;保留扇区数$/;"	d
+BPB_SecPerClus	Boot/Boot.asm	/^	BPB_SecPerClus	db		1				;每簇扇区数$/;"	d
+BPB_SecPerTrk	Boot/Boot.asm	/^	BPB_SecPerTrk	dw		18				;每磁道扇区数$/;"	d
+BPB_TotSec16	Boot/Boot.asm	/^	BPB_TotSec16	dw		2880			;逻辑扇区总数$/;"	d
+BPB_TotSec32	Boot/Boot.asm	/^	BPB_TotSec32	dd		0				;如果BPB_TotSec16为0，这里记录扇区总数$/;"	d
+BS_BootSig	Boot/Boot.asm	/^	BS_BootSig		db		0x29			;扩展引导标记$/;"	d
+BS_DrvNum	Boot/Boot.asm	/^	BS_DrvNum		db		0				;中断13的驱动器号$/;"	d
+BS_FileSysType	Boot/Boot.asm	/^	BS_FileSysType	db		'FAT12   '		;文件系统类型$/;"	d
+BS_OEMName	Boot/Boot.asm	/^	BS_OEMName		db		'FreeDos '		;OEM string，8个字节$/;"	d
+BS_Reserved1	Boot/Boot.asm	/^	BS_Reserved1	db		0				;未使用$/;"	d
+BS_VolID	Boot/Boot.asm	/^	BS_VolID		dd		0				;卷序列号$/;"	d
+BS_VolLab	Boot/Boot.asm	/^	BS_VolLab		db		'Orange OS  '	;卷标，11个字节$/;"	d
+BaseOfLoader	Boot/Boot.asm	/^	BaseOfLoader	equ		0x9000$/;"	d
+BaseOfStack	Boot/Boot.asm	/^	BaseOfStack		equ		0x7c00$/;"	d
+BootMessage	Boot/Boot.asm	/^	BootMessage:	db		"Booting  "$/;"	d
+DispMsg	Loader/Loader.asm	/^DispMsg:$/;"	l
+DispStr	Boot/Boot.asm	/^DispStr:$/;"	l
+LABEL_CMP_FILE_NAME	Boot/Boot.asm	/^LABEL_CMP_FILE_NAME:$/;"	l
+LABEL_CMP_NAME_END	Boot/Boot.asm	/^LABEL_CMP_NAME_END:$/;"	l
+LABEL_CMP_NEXT_FILE_NAME	Boot/Boot.asm	/^LABEL_CMP_NEXT_FILE_NAME:$/;"	l
+LABEL_EVEN	Boot/Boot.asm	/^LABEL_EVEN:$/;"	l
+LABEL_FILE_LOADED	Boot/Boot.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_FOUND_LOADER	Boot/Boot.asm	/^LABEL_FOUND_LOADER:				;找到LOADER.BIN文件$/;"	l
+LABEL_GO_ON	Boot/Boot.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_GO_ON_LOADING	Boot/Boot.asm	/^LABEL_GO_ON_LOADING:$/;"	l
+LABEL_GO_TO_NEXT_SECTOR	Boot/Boot.asm	/^LABEL_GO_TO_NEXT_SECTOR:$/;"	l
+LABEL_IN_HIGH_BYTE	Boot/Boot.asm	/^LABEL_IN_HIGH_BYTE:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	Boot/Boot.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_END	Boot/Boot.asm	/^LABEL_SEARCH_IN_ROOT_DIR_END:	;没找到LOADER.BIN$/;"	l
+LABEL_START	Boot/Boot.asm	/^LABEL_START:$/;"	l
+LoaderFileName	Boot/Boot.asm	/^	LoaderFileName	db		'LOADER  BIN', 0	;LOADER.BIN (文件名)$/;"	d
+Message	Loader/Loader.asm	/^Message:    db  "In the Loader.bin"$/;"	d
+Message1	Boot/Boot.asm	/^	Message1:		db		"Ready.   "$/;"	d
+Message2	Boot/Boot.asm	/^	Message2:		db		"No LOADER"$/;"	d
+MessageLength	Boot/Boot.asm	/^	MessageLength	equ		9$/;"	d
+OffsetOfLoader	Boot/Boot.asm	/^	OffsetOfLoader	equ		0x100$/;"	d
+ReadSector	Boot/Boot.asm	/^ReadSector:$/;"	l
+RootDirSecNum	Boot/Boot.asm	/^	RootDirSecNum	equ		19			;根目录起始扇区号=FAT扇区数(2个) + 引导扇区数$/;"	d
+dec	Boot/Boot.asm	/^	dec dl$/;"	d
+inc	Boot/Boot.asm	/^	inc di$/;"	d
+mul	Boot/Boot.asm	/^	mul dh$/;"	d
+org	Boot/Boot.asm	/^org 0x7c00$/;"	l
+org	Loader/Loader.asm	/^org 0x100$/;"	l
+pop	Boot/Boot.asm	/^	pop dx$/;"	d
+push	Boot/Boot.asm	/^	push dx$/;"	d
+wFileNameCnt	Boot/Boot.asm	/^	wFileNameCnt	db		0$/;"	d
+wRootCurSecNum	Boot/Boot.asm	/^	wRootCurSecNum	dw		0$/;"	d
+wRootSecCnt	Boot/Boot.asm	/^	wRootSecCnt		dw		14			;根目录所占的扇区数$/;"	d
